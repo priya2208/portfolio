@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- =====BOX ICONS===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+   
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <!-- mouse cursor  -->
+    <div class="cursor-inner" id="cursor-inner"></div>
+    <div class="cursor-outer" id="cursor-outer"></div>
+
+    <!-- contact links -->
+    <div id="fixedLinks">
+      <a href="https://wa.me/+919897897009"
+      class="fixedLink">
+        
+        <i class="bx bxl-whatsapp"></i>
+  
+      
+      </a>
+      <a href= "tel:+91 9897897009" class="fixedLink">          <i class="bx bx-phone-call"></i></a>
+    </div>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <div class="logo-top">
+     
+          </div>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Project</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+            <li class="nav__item">
+                <a href="#resume" class="nav__link" onclick=openURL()>Resume</a>
+              </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home bd-grid" id="home">
+        <div class="home__data">
+          <h1 class="home__title">
+            Hi,<br />I'am <span class="home__title-color">
+              Priya 
+            </span><br />MERN
+            Stack <br />
+            Developer
+          </h1>
+
+          <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
+            <a href="mailto:mittalpriya2208@gmail.com" tabindex="-1">
+              <button class="letsTalkBtn">
+                <p class="letsTalkBtn-text">Let's Talk!</p>
+                <span class="letsTalkBtn-BG"></span>
+              </button></a>
+          
+       
+          </div>
+        </div>
+
+        <div class="home__social">
+          <a href="" class="home__social-icon"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="" class="home__social-icon"
+            ><i class="bx bxl-behance"></i
+          ></a>
+          <a href="" class="home__social-icon"><i class="bx bxl-github"></i></a>
+        </div>
+
+        <div class="home__img">
+          <svg
+            class="home__blob"
+            viewBox="0 0 479 467"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <mask id="mask0" mask-type="alpha">
+              <path
+                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+              />
+            </mask>
+            <g mask="url(#mask0)">
+              <path
+                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+              />
+              <image
+                class="home__blob-img"
+                x="50"
+                y="60"
+                href="assets/img/avtar.png"
+              />
+            </g>
+          </svg>
+        </div>
+      </section>
+
+      <!--===== ABOUT =====-->
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
+
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="assets/img/about.png" alt="" />
+          </div>
+
+          <div>
+            <h2 class="about__subtitle">I'am Priya</h2>
+            <p class="about__text">
+              a passionate MERN stack developer with a knack for crafting robust
+              and user-friendly web applications. My journey into the world of
+              web development started with a curiosity-driven exploration of
+              programming languages, and it has since evolved into a fulfilling
+              career path.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--===== SKILLS =====-->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills__container bd-grid">
+          <div>
+            <h2 class="skills__subtitle">Profesional Skills</h2>
+            <p class="skills__text">
+              As a professional, I have developed a diverse set of skills that
+              enable me to excel in various work environments.
+            </p>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-html5 skills__icon"></i>
+                <span class="skills__name">HTML</span>
+              </div>
+              <div class="skills__bar skills__html"></div>
+              <div>
+                <span class="skills__percentage">95%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-css3 skills__icon"></i>
+                <span class="skills__name">CSS</span>
+              </div>
+              <div class="skills__bar skills__css"></div>
+              <div>
+                <span class="skills__percentage">85%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxl-javascript skills__icon"></i>
+                <span class="skills__name">JAVASCRIPT</span>
+              </div>
+              <div class="skills__bar skills__js"></div>
+              <div>
+                <span class="skills__percentage">65%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxs-paint skills__icon"></i>
+                <span class="skills__name">NODE</span>
+              </div>
+              <div class="skills__bar skills__node"></div>
+              <div>
+                <span class="skills__percentage">35%</span>
+              </div>
+            </div>
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxs-paint skills__icon"></i>
+                <span class="skills__name">REACT</span>
+              </div>
+              <div class="skills__bar skills__react"></div>
+              <div>
+                <span class="skills__percentage">65%</span>
+              </div>
+            </div>
+
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class="bx bxs-paint skills__icon"></i>
+                <span class="skills__name">MONGODB</span>
+              </div>
+              <div class="skills__bar skills__mongo"></div>
+              <div>
+                <span class="skills__percentage">35%</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <img src="assets/img/skills.png" alt="" class="skills__img" />
+          </div>
+        </div>
+      </section>
+
+      <!--===== WORK =====-->
+      <section class="work section" id="work">
+        <h2 class="section-title">Projects</h2>
+        <div class="work__container">
+       
+        <div class="glass-card">
+          <h2>SEQUENCE</h2>
+          <h3>
+            Tech Stack
+            <p>ReactJs, ASP Dot Net Framework, AWS, Postgrey.</p>
+          </h3>
+          <p>
+            It Transforms complicated processes with customizable inspection
+            templates. Use safety management software to easily create and
+            assign an unlimited number of Inspection report types across your
+            organization. It Provided Real Time data and trends and help user to
+            provide hassle free training management.
+          </p>
+          <a href="https://matchupIT.com" target="_blank"   class="project_link"
+            ><i class="bx bx-link"></i>Visit Link</a
+          >
+        </div>
+        <div class="glass-card">
+          <h2>SAFETY CLOUD</h2>
+          <h3>
+            Tech Stack
+            <p>ReactJs, ASP Dot Net Framework, AWS, Postgrey.</p>
+          </h3>
+          <p>
+            It provides services of Post and General Inspection with inbuilt
+            templates, with real time rainfall data. It includes real time data
+            and dynamic Reports formats with flexible modifications.
+          </p>
+          <div class="links">
+          <a href="https://matchupIT.com" target="_blank"  class="project_link"
+            ><i class="bx bx-link"></i>Visit Link</a
+          >
+        </div>
+        </div>
+        <div class="glass-card">
+          <h2>MATCHUP IT</h2>
+          <h3>
+            Tech Stack
+            <p>ReactJS, NodeJS, AWS, SQL, MongoDB</p>
+          </h3>
+          <p>
+            It is a social networking platform for connecting global IT
+            Professionals with companies. It help companies to solve Tech
+            problems and professionals better position there expertise. It
+            includes some of the profile attributes that drive social media
+            networks.
+          </p>
+          <a href="https://matchupIT.com" target="_blank" class="project_link"
+            ><i class="bx bx-link"></i>Visit Link</a
+          >
+        </div>
+    </div>
+      </section>
+
+      <!--===== CONTACT =====-->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact__container bd-grid">
+          <form method="POST" onsubmit="sendEmail(); 
+          // reset(); return false;" 
+           class="contact__form">
+            <input id="name" type="text" placeholder="Name" class="contact__input" />
+            <input id="email" type="mail" placeholder="Email" class="contact__input" />
+            <textarea
+              name=""
+              id=""
+              cols="0"
+              rows="10"
+              class="contact__input"
+              id="message" 
+            ></textarea>
+            <input
+              type="submit"
+              value="Contact"
+              class="contact__button button"
+              id="send_msg"
+            />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+      
+      <button onclick="scrollToTop()" id="backToTopBtn" title="Go to top">&#8593;</button>
+
+      <p class="footer__title">Priya</p>
+      <div class="footer__social">
+        <a href="#" class="footer__icon"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="footer__icon"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="footer__icon"><i class="bx bxl-twitter"></i></a>
+      </div>
+      <div class="footer-foreground">
+        <div class="footercontainer">
+      <!-- <div class="footer-avatar-container">
+        <img src="assets/img/avtar.png"  alt="animation-head" class="footer-avatar-img" id="footer-wala-avatar"/>
+        <div class="footer-avatar-face">
+          <div class="footer-avatar-eye footer-left-eye">
+            <div class="footer-pupil"></div>
+          </div>
+          <div class="footer-avatar-eye footer-right-eye">
+            <div class="footer-pupil"></div>
+          </div>
+        </div>
+      </div> -->
+      <div class="footer-bottom">
+        <article>
+          Design & Built by Priya Mittal
+         
+        </article>
+      </div>
+      
+    </div>
+  </div>
+    </footer>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+  </body>
+</html>
