@@ -150,3 +150,13 @@ function sendEmail() {
       document.getElementById("message").value,
   }).then((message) => alert("Email send Successfully"));
 }
+
+// for header title
+
+document.addEventListener("visibilitychange", function () {
+  if (document.visibilityState == "visible") {
+    document.title = "PRIYA | MERN DEVELOPER";
+  } else {
+    document.title = "COMEBACK TO PORTFOLIO";
+  }
+});
